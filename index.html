@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://sandbox-web-forms-whyte.cs95.force.com/lightning/lightning.out.js"></script>
-
+  <script src="https://whyte--partial.sandbox.my.salesforce-sites.com/webforms/lightning/lightning.out.js"></script>
 <div id="lightningLocator"></div>
-
 <script>
     $Lightning.use("c:WebFormApp",
         function() {
             $Lightning.createComponent(
                 "c:WebForm",
-                { flowName: "WebFormCaseRegistration"},                  
-                "lightningLocator",   
+                { flowName: "WebFormCaseFriendsAndFamily"},                  
+                "lightningLocator",  
                 function(cmp) {}
             );
         },
-        'https://sandbox-web-forms-whyte.cs95.force.com'  //Site endpoint
+        'https://whyte--partial.sandbox.my.salesforce-sites.com/webforms'  //Site endpoint
     );
 </script>
 </html>
